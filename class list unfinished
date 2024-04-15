@@ -1,0 +1,46 @@
+class AnimaliaK:
+    def __init__(self, nameK, traitK):
+        self.nameK = nameK
+        self.traitK = traitK
+class ChordataP(AnimaliaK):
+    def __init__(self, nameP, traitP):
+        self.nameP = nameP
+        self.traitP = traitP
+class MammaliaC(ChordataP):
+    def __init__(self, nameC, traitC):
+        self.nameC = nameC
+        self.traitC = traitC
+class PrimateO(MammaliaC):
+    def __init__(self, nameO, traitO):
+        self.nameO = nameO
+        self.traitO = traitO
+class AotidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Night Monkey
+class CallitrichidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Golden Lion Tamarin, Pygmy Marmoset, 
+class CercopithecidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Probiscus, Mandrill, Baboon
+class AtelidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Spider Monkey
+class CebidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Tufted Capuchin
+class HominidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Orangutan, Chimp, Human, Gorilla
