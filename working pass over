@@ -1,0 +1,27 @@
+class AnimaliaK:
+    def __init__(self, name):
+        self.Animilia = name
+        self.kingdom = "They are in the Kindom Animalia, meaning they can move, they reproduce sexually, they lack cell walls and they cannot prepare their own food."
+    def display_properties(self):
+        print(self.kingdom)
+
+class ChordataP(AnimaliaK):
+    def __init__(self, name):
+        super().__init__(name)
+        self.name = name
+        self.phylum = "They are in the Chordata Phylum, meaning it has a spine and a post anal tail extending during the fetus stage. "
+    def display_properties(self):
+        anim.display_properties()
+        print(self.phylum)
+
+anim = AnimaliaK("")
+chor = ChordataP("")
+
+print("============The Ape Dex============ \n1. Night Monkey\n2. Spider Money\n3. Tufted Capuchin\n4. Gorilla\n5. Human\n6. Chimp\n7. Orangutan\n8. Probiscus Monkey\n9. Mandrill\n10. Baboon\n11. Golden Lion Tamarin\n12. Pygmy Marmoset")
+w = 5
+while (w == 5):
+    menu1 = int(input())
+    if (menu1 == 1):
+        print("")
+        chor.display_properties()
+        quit()
