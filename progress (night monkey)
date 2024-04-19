@@ -1,0 +1,79 @@
+class AnimaliaK:
+    def __init__(self, name):
+        self.Animilia = name
+        self.kingdom = "They are in the Kindom Animalia, meaning they can move, they reproduce sexually, they lack cell walls and they cannot prepare their own food."
+    def display_properties(self):
+        print(self.kingdom)
+class ChordataP(AnimaliaK):
+    def __init__(self, name):
+        super().__init__(name)
+        self.name = name
+        self.phylum = "They are in the Chordata Phylum, meaning it has a spine and a post anal tail extending during the fetus stage. "
+    def display_properties(self):
+        anim.display_properties()
+        print(self.phylum)
+class MammaliaC(ChordataP):
+    def __init__(self, name):
+        super().__init__(name)
+        self.name = name
+        self.classy = "They are in the Mammalia class, meaning they feed milk to their young, give live birth, and have more complex brains."
+    def display_properties(self):
+        chor.display_properties()
+        print(self.classy)
+class PrimateO(MammaliaC):
+    def __init__(self, name):
+        super().__init__(name)
+        self.name = name
+        self.order = "They are in the Primate Order, meaning they have complex brains, they rely more on vision than sent, they have hands capable of grabbing."
+    def display_properties(self):
+        mamm.display_properties()
+        print(self.order)
+class AotidaeF(PrimateO):
+    def __init__(self, name):
+        self.name = name
+        self.familyNM = "They are in the Aotidae family, which classifies it as a Night Monkey. The exact genus/species is the Aotus. \nNight Monkeys can only see in mono, meaning they see black and white, and in shdes of grey."
+    def display_properties(self):
+        pri.display_properties()
+        print(self.familyNM)
+        #Night Monkey
+
+
+class CallitrichidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Golden Lion Tamarin, Pygmy Marmoset, 
+class CercopithecidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Probiscus, Mandrill, Baboon
+class AtelidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Spider Monkey
+class CebidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Tufted Capuchin
+class HominidaeF(PrimateO):
+    def __init__(self, nameF, traitF):
+        self.nameF = nameF
+        self.traitF = traitF
+        #Orangutan, Chimp, Human, Gorilla
+
+anim = AnimaliaK("")
+chor = ChordataP("")
+mamm = MammaliaC("")
+pri = PrimateO("")
+night = AotidaeF("")
+print("============The Ape Dex============ \n1. Night Monkey\n2. Spider Money\n3. Tufted Capuchin\n4. Gorilla\n5. Human\n6. Chimp\n7. Orangutan\n8. Probiscus Monkey\n9. Mandrill\n10. Baboon\n11. Golden Lion Tamarin\n12. Pygmy Marmoset")
+w = 5
+while (w == 5):
+    menu1 = int(input())
+    if (menu1 == 1):      
+        print("                        ,░░░░░░░░'░░░░░░░░░░░░░,     \n                   .░░░░░░░░░░░░░░░░░░░░░' '░░░░░░,   \n                ░░░░░░░░▒▒▒░░░░░░░▒▒░░      ░░▒▒░░░░░, \n              .¡░░░░▒░▒▒▒░░░░░░▒░▒▒▒░░       '░░▒▒▒░░░░▒╖;   \n            .░░░░▒▒▒▒▒▒▒░░░░░▒▒▒▒▒▒▒░'       ░▒░▒▒▒▒░░░░░▒▒▒∩  \n           ░░░░░░▒▒░░░░░░░╥╢╫▓▓▓▓▓▒▒▒░      ,░▒▒@▓╫▒╣▒╖░░░░▒▒░; \n        ░░░░░▒░▒░░▒░░ ░╫▓▓█████████▓▓╖    ╓╫▓▓██████▓▓▒░'░░░▒░▒░   \n        ░░░░░░▒▒░░░▒░ j╫▓█████████▀╜▓╜▓@  ╓▓▓║Ñ████████▓▓░ ░░▒░░░`        \n      .░░░░░░░░░░░░░  ╠▓██▓▓▀╜╜╜╙└'╜╚░░╝  ▒░▒░""░▒▒▒▓████▒░ ░░░░░¡              \n     ,░░░░░░░░▒▒░░░  ░░▒▒░░ `   '     ,.  ,   .^-`' `░░▒▀▓░  ░░░░, \n    ░░░░░░░░░▒▒▒░░░  ░▒▒░  .░░░▒░░░  ░▒░░:▒░ '░░░░░░   ░▒▒░  ░░▒▒░ \n   ░░░░░░░░░░▒▒░░░░' ░░▒ ─ ░░░░,░░░¡  '░░ ░  ░░░ⁿ'░░░   ▒▒░  ░░░▒░░       \n.░░░░░░░░░░░░▒░░░▒░ '░╣░-, ░░░░░░░`    ░    └░░░░░░-   ▒▒░ .░░░▒▒░░░   \n░░░░░░░░░░░░ -▒▒░░▒░░ ░▒▒,,²s┐,    ,,   ░      ---- «- ▒░  ░░-░▒░░░░░   \n░░░░░░░░░░░░ ¡░▒░░░░⌐ ░▒╣@╓¡  ¡░░░░░   '   ░░░¡,    ╓▒▒░  ░░░░░░  ░░' \n░░░░░░░░░░░░░░░ ░░░░░░░░   ░╙▒▒▒░`    '░'└`    ░▒▀▓▒░└  ░░'░░░'    '░░  \n░░░░░░░░░░░░░░░  '░▒░░░░░░░░░▒░╜░░, `!    :'' ;░▒▒╓┌, .,,░░░░    ░░'░░  \n░░░░░░░░░░░░░░░░ '░░░░,:░░░░▒▒▒%╖  `` ─«'~     ,╖▒▒▒░░░,,░░'      ░└░░   \n░░░░░░░░░░░░░░░░, .░░░░░░,¡,░░▒▒░▒g,        ,╓¢░░░░░░' ░░░      ,,  '¡ \n=============================================================================")
+        night.display_properties()
+
