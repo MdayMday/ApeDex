@@ -129,7 +129,7 @@ class Proboscus(CercopithecidaeF):
         self.name = name
         self.familyPro = "This is a Proboscus monkey. They are incredible swimmers, and can outpace a crocodile in the water. They also hit sweet belly flops."
     def display_properties(self):
-        pri.display_properties()
+        cer.display_properties()
         print(self.familyPro)
         #Probiscus
 class Mandrill(CercopithecidaeF):
@@ -137,7 +137,7 @@ class Mandrill(CercopithecidaeF):
         self.name = name
         self.familyMan = "This is a Mandrill monkey. They are the largest species of monkey. They sleep in a different tree every night."
     def display_properties(self):
-        pri.display_properties()
+        cer.display_properties()
         print(self.familyMan)
         #Mandrill
 class Baboon(CercopithecidaeF):
@@ -145,7 +145,7 @@ class Baboon(CercopithecidaeF):
         self.name = name
         self.familyBab = "This is a Baboon. They are brutal fighters, and the males leave their familes around puberty. They can live up to 40 years."
     def display_properties(self):
-        pri.display_properties()
+        cer.display_properties()
         print(self.familyBab)
         #Baboon
 anim = AnimaliaK("")
